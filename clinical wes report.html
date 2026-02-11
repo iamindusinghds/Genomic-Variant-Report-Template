@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clinical WES Report</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .pathogenic {
+            color: red;
+            font-weight: bold;
+        }
+
+        .benign {
+            color: green;
+            font-weight: bold;
+        }
+
+        .vus {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: grey;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Whole Exome Sequencing (WES) Clinical Report</h1>
+
+<h2>Patient Information</h2>
+<p><strong>Name:</strong> ABC</p>
+<p><strong>Sample ID:</strong> S2026-001</p>
+<p><strong>Age:</strong> 32 years</p>
+<p><strong>Gender:</strong> Female</p>
+
+<h2>Test Information</h2>
+<p><strong>Test Performed:</strong> Whole Exome Sequencing</p>
+<p><strong>Platform:</strong> Illumina</p>
+<p><strong>Reference Genome:</strong> GRCh38</p>
+
+<h2>Variant Summary</h2>
+
+<table>
+
+<tr>
+    <th>Gene</th>
+    <th>Chromosome</th>
+    <th>Position</th>
+    <th>Variant</th>
+    <th>Classification</th>
+</tr>
+
+<tr>
+    <td>BRCA1</td>
+    <td>17</td>
+    <td>43071077</td>
+    <td>c.68_69delAG</td>
+    <td class="pathogenic">Pathogenic</td>
+</tr>
+
+<tr>
+    <td>CFTR</td>
+    <td>7</td>
+    <td>117199644</td>
+    <td>c.1521_1523delCTT</td>
+    <td class="benign">Benign</td>
+</tr>
+
+<tr>
+    <td>MECP2</td>
+    <td>X</td>
+    <td>153296717</td>
+    <td>c.473C>T</td>
+    <td class="vus">VUS</td>
+</tr>
+
+</table>
+
+<h2>Interpretation</h2>
+<p>
+The BRCA1 pathogenic variant identified is associated with increased hereditary breast and ovarian cancer risk. Clinical correlation and genetic counseling are recommended.
+</p>
+
+<h2>Methodology</h2>
+<p>
+Genomic DNA was extracted from peripheral blood. Library preparation was performed followed by sequencing on an Illumina platform. Bioinformatics analysis included quality control, alignment to GRCh38 reference genome, variant calling, annotation, and classification according to ACMG guidelines.
+</p>
+
+<hr>
+
+<p class="footer">
+This report is generated using a structured HTML/CSS-based genomic reporting template designed for integration with NGS pipelines.
+</p>
+
+</body>
+</html>
