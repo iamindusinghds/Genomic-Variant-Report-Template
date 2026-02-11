@@ -1,4 +1,4 @@
-Genomic Variant Report Template
+**Genomic Variant Report Template**
 
 This project demonstrates a structured HTML/CSS-based genomic reporting template designed for WES/WGS variant summaries.
 
@@ -24,7 +24,7 @@ To simulate the reporting layer of genomic diagnostics workflows, where variant 
 
 
 
-Clinical WES Report Template
+**Clinical WES Report Template**
 
 This repository includes a structured Whole Exome Sequencing (WES) clinical report template designed to simulate the reporting layer of an NGS pipeline.
 
