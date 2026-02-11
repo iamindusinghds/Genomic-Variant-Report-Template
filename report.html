@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Genomic Report</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .pathogenic {
+           color: red;
+           font-weight: bold;
+        }
+        .benign {
+           color: green;
+           font-weight: bold;
+        }
+
+        .vus {
+        color: orange;
+        font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+<h1>Genomic Analysis Report</h1>
+
+<h2>Patient Information</h2>
+<p>Name: ABC</p>
+<p>Sample ID: S123</p>
+
+<h2>Variant Summary</h2>
+
+<table border="1">
+
+<tr>
+    <th>Gene</th>
+    <th>Chromosome</th>
+    <th>Position</th>
+    <th>Clinical Significance</th>
+</tr>
+
+<tr>
+    <td>BRCA1</td>
+    <td>17</td>
+    <td>43071077</td>
+    <td class="pathogenic">Pathogenic</td>
+</tr>
+
+<tr>
+    <td>CFTR</td>
+    <td>7</td>
+    <td>117199644</td>
+    <td class="benign">Benign</td>
+
+</tr>
+
+<tr>
+    <td>MECP2</td>
+    <td>X</td>
+    <td>153296717</td>
+    <td class="vus">VUS</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
